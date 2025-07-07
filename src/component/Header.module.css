@@ -8,5 +8,16 @@ header {
   justify-content: space-between;
   align-items: center;
   background: var(--Neutral-800);
-  padding: 10px;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.toggle-background {
+  padding: .5rem;
+  border-radius: .5rem;
+  background: var(--Neutral-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }

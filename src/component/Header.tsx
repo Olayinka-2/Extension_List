@@ -10,7 +10,7 @@ export default function Header() {
         <div>
           <img src={logo} alt="logo" />
         </div>
-        <div>
+        <div className={syles["toggle-background"]}>
           <img src={sun} alt="LightMode toggle botton" />
         </div>
       </div>
