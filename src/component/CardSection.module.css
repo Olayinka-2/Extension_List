@@ -1,0 +1,40 @@
+.card-container {
+
+}
+
+.card {
+  width: 40rem;
+  background-color: var(--Neutral-800);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: white;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: .3rem;
+}
+
+.card-title  + p {
+  font-size: 1.4rem;
+  color: var(--Neutral-300);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#icons {
+  color: red;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
