@@ -32,12 +32,6 @@ body {
 }
 
 .project-container {
-    height: 100dvh;
     background: var(--Dark-Gradient);
     padding: 1rem 9rem;
 }
-
-/* header, main {
-  width: 760px;
-  margin: 0 auto;
-} */

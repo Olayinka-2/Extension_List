@@ -1,12 +1,9 @@
-.card-container {
-
-}
-
 .card {
   width: 40rem;
   background-color: var(--Neutral-800);
   padding: 1.5rem;
   border-radius: 1rem;
+  border: .1rem solid var(--Neutral-600);
 }
 
 .card-body {
@@ -14,6 +11,7 @@
   flex-direction: row;
   gap: 1rem;
   color: white;
+  margin-bottom: 3rem;
 }
 
 .card-title {
@@ -22,8 +20,10 @@
 }
 
 .card-title  + p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--Neutral-300);
+  width: 90%;
+  line-height: 1.5;
 }
 
 .card-footer {
@@ -32,9 +32,18 @@
   align-items: center;
 }
 
-#icons {
+.card-footer button {
+  background-color: var(--Neutral-800);
+  border: .1rem solid var(--Neutral-600);
+  padding: .65rem 1rem;
+  border-radius: 50rem;
+  color: var(--Neutral-200);
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.toggle-icon {
   color: red;
-  padding: 0;
-  margin: 0;
-  background-color: white;
+  font-size: 3.5rem;
+  cursor: pointer;
 }
