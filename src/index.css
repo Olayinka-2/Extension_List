@@ -33,5 +33,13 @@ body {
 
 .project-container {
     background: var(--Dark-Gradient);
-    padding: 1rem 9rem;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+header, main, section {
+  width: min(100%, 1000px);
 }

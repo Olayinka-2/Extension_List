@@ -16,4 +16,8 @@ const logosPath = import.meta.glob("../assets/images/*", {
   import: "default",
 });
 
-export {dataStructure, cardProps, logosPath}
+type tabIndex = {
+  tabIndex: string;
+}
+
+export {dataStructure, cardProps, logosPath, tabIndex}

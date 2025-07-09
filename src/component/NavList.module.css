@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   color: #fff;
+  margin-bottom: 3rem;
   padding:4rem 0 2rem;
 }
 
@@ -23,7 +24,21 @@
   border: .1rem solid var(--Neutral-600);
 }
 
+.nav-links a:focus {
+  outline: 2px solid var(--Red-700);
+  border: 1px solid var(--Neutral-900);
+}
+
 .navLinkHeader {
   font-size: 2rem;
   font-weight: bold;
+}
+
+@media screen and (max-width: 540px) {
+  .navigationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
 }

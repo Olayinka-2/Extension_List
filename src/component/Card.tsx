@@ -9,7 +9,6 @@ const Card: React.FC<cardProps> = ({cardItem}) => {
   let cardItemInfo = cardItem;
   return (
     <>
-    <div>
           <div className={styles["card"]}>
           < div className={styles['card-body']}>
             <div>
@@ -28,7 +27,6 @@ const Card: React.FC<cardProps> = ({cardItem}) => {
             </span>
           </div>
         </div>
-    </div>
 
     </>
   )

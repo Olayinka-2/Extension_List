@@ -1,5 +1,14 @@
+.card-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 0rem 3rem;
+
+}
+
 .card {
-  width: 40rem;
+  flex: 1 1 25rem;
   background-color: var(--Neutral-800);
   padding: 1.5rem;
   border-radius: 1rem;
@@ -42,8 +51,14 @@
   cursor: pointer;
 }
 
+.card-footer button:focus {
+  outline: 2px solid var(--Red-700);
+  border: 1px solid var(--Neutral-900);
+}
+
 .toggle-icon {
   color: red;
   font-size: 3.5rem;
+  border: 1px solid var(--Neutral-800);
   cursor: pointer;
 }
