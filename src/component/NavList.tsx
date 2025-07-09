@@ -1,6 +1,22 @@
+import React, { useState } from "react";
 import styles from "./NavList.module.css";
 
-export default function NavList() {
+interface itemType {
+  setItemDisplay: React.Dispatch<React.SetStateAction<string>>;
+  itemDisplay: string
+}
+
+const NavList:React.FC<itemType> = ({setItemDisplay}) => {
+
+ let [activeTab, setActiveTab] = useState<string>("All");
+
+  const handleClick = (label: string) => {
+    setItemDisplay(label);
+    setActiveTab(label)
+  };
+
+  const navItems = ["All", "Active", "Inactive"];
+
   return (
     <>
       <section id="navigation">
@@ -8,15 +24,16 @@ export default function NavList() {
             <div className={styles.navLinkHeader}>Extensions List</div>
             <div className='col-12 col-sm-6'>
               <ul className={styles["nav-links"]}>
-                <li className="nav-item">
-                  <a className="link" href="#">All</a>
-                </li>
-                <li className="nav-item">
-                  <a className="link" href="#">Active</a>
-                </li>
-                <li className="nav-item">
-                  <a className="link" href="#">Inactive</a>
-                </li>
+                {
+                  navItems.map(item => (
+                    <li key={item}>
+                        <a className={`${activeTab === item ? styles.active: ""}`}
+                        href="#"
+                        onClick={() => handleClick(item)
+                        }>{item}</a>
+                      </li>
+                  ))
+                }
               </ul>
             </div>
           </div>
@@ -24,3 +41,5 @@ export default function NavList() {
     </>
   )
 }
+
+export default NavList;

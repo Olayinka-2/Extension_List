@@ -1,14 +1,17 @@
 .card-container {
   display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
   justify-content: center;
   padding: 1rem 0rem 3rem;
+}
 
+.innerContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  width: 100%;
+  gap: 1.5rem;
 }
 
 .card {
-  flex: 1 1 25rem;
   background-color: var(--Neutral-800);
   padding: 1.5rem;
   border-radius: 1rem;
@@ -47,7 +50,7 @@
   padding: .65rem 1rem;
   border-radius: 50rem;
   color: var(--Neutral-200);
-  font-weight: 200;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -56,9 +59,22 @@
   border: 1px solid var(--Neutral-900);
 }
 
+.card-footer button:hover {
+  background: var(--Red-500);
+  color: var(--Neutral-900);
+  border: none;
+}
+
 .toggle-icon {
-  color: red;
   font-size: 3.5rem;
   border: 1px solid var(--Neutral-800);
   cursor: pointer;
+}
+
+.active {
+  color: var(--Red-500);
+}
+
+.notActive {
+  color: var(--Neutral-600);
 }

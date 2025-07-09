@@ -5,18 +5,32 @@ import data from "../../data.json";
 
 import {dataStructure} from "./componentUtils"
 
-let dataArray:dataStructure[] = data;
+interface itemType {
+  setItemDisplay?: React.Dispatch<React.SetStateAction<string>>;
+  itemDisplay?: string
+}
 
-const CardContainer:React.FC = () => {
+const CardContainer:React.FC<itemType> = ({itemDisplay }) => {
+
+  let filteredData: dataStructure[] = data;
+
+  if (itemDisplay?.toLowerCase() === "active") {
+    filteredData = data.filter((e) => e.isActive);
+  } else if (itemDisplay?.toLowerCase() === "inactive") {
+    filteredData = data.filter((e) => !e.isActive);
+  }
+
   return(
     <>
       <main>
         <div className={styles["card-container"]}>
+          <div className={styles["innerContainer"]}>
           {
-            dataArray.map((cardItems, index) => (
+            filteredData.map((cardItems, index) => (
               <Card key={index} cardItem={cardItems} />
             ))
           }
+          </div>
         </div>
         </main>
     </>

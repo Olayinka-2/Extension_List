@@ -5,8 +5,15 @@ import {cardProps, logosPath} from "./componentUtils"
 
 const Icon = FaToggleOn as unknown as React.FC<{ size?: number; color?: string; className? : string}>;
 
+
 const Card: React.FC<cardProps> = ({cardItem}) => {
   let cardItemInfo = cardItem;
+
+  const IconClass = [
+    styles["toggle-icon"],
+    cardItemInfo.isActive ? styles["active"] : styles["notActive"]
+  ].join(" ");
+  
   return (
     <>
           <div className={styles["card"]}>
@@ -23,7 +30,7 @@ const Card: React.FC<cardProps> = ({cardItem}) => {
           <div className={styles["card-footer"]}>
             <button>Remove</button>
             <span>
-              <Icon className={styles["toggle-icon"]}  />
+              <Icon className={IconClass}  />
             </span>
           </div>
         </div>

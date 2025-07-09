@@ -25,3 +25,7 @@ header {
 .toggle-background:focus {
   outline: 2px solid var(--Red-700);
 }
+
+.toggle-background:not(:active):hover {
+  background: var(--Neutral-600);
+}
