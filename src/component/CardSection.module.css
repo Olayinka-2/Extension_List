@@ -12,17 +12,17 @@
 }
 
 .card {
-  background-color: var(--Neutral-800);
+  background-color: var(--header-bg);
   padding: 1.5rem;
   border-radius: 1rem;
-  border: .1rem solid var(--Neutral-600);
+  border: .1rem solid var(--border-outline);
 }
 
 .card-body {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  color: white;
+  color: var(--btn-color);
   margin-bottom: 3rem;
 }
 
@@ -33,7 +33,7 @@
 
 .card-title  + p {
   font-size: 1.2rem;
-  color: var(--Neutral-300);
+  color: var(--hero-text);
   width: 90%;
   line-height: 1.5;
 }
@@ -45,36 +45,36 @@
 }
 
 .card-footer button {
-  background-color: var(--Neutral-800);
-  border: .1rem solid var(--Neutral-600);
+  background-color: var(--header-bg);
+  border: .1rem solid var(--border-outline);
   padding: .65rem 1rem;
   border-radius: 50rem;
-  color: var(--Neutral-200);
+  color: var(--btn-color);
   font-weight: bold;
   cursor: pointer;
 }
 
 .card-footer button:focus {
-  outline: 2px solid var(--Red-700);
-  border: 1px solid var(--Neutral-900);
+  outline: 2px solid var(--link-outline);
+  border: 1px solid var(--btn-hover);
 }
 
 .card-footer button:hover {
-  background: var(--Red-500);
-  color: var(--Neutral-900);
+  background: var(--active);
+  color: var(--btn-hover);
   border: none;
 }
 
 .toggle-icon {
   font-size: 3.5rem;
-  border: 1px solid var(--Neutral-800);
+  border: 1px solid var(--header-bg);
   cursor: pointer;
 }
 
 .active {
-  color: var(--Red-500);
+  color: var(--active);
 }
 
 .notActive {
-  color: var(--Neutral-600);
+  color: var(--border-outline);
 }

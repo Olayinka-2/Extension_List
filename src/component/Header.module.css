@@ -7,7 +7,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: var(--Neutral-800);
+  background: var(--header-bg);
   padding: 1rem;
   border-radius: 1rem;
 }
@@ -15,7 +15,7 @@ header {
 .toggle-background {
   padding: .5rem;
   border-radius: .5rem;
-  background: var(--Neutral-700);
+  background: var(--link-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,9 +23,9 @@ header {
 }
 
 .toggle-background:focus {
-  outline: 2px solid var(--Red-700);
+  outline: 2px solid var(--link-outline);
 }
 
 .toggle-background:not(:active):hover {
-  background: var(--Neutral-600);
+  background: var(--border-outline);
 }

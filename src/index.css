@@ -1,20 +1,44 @@
 :root {
-  --Neutral-900: hsl(227, 75%, 14%);
-  --Neutral-800: hsl(226, 25%, 17%);
-  --Neutral-700: hsl(225, 23%, 24%);
-  --Neutral-600: hsl(225, 11%, 29%);
-  --Neutral-300: hsl(0, 0%, 78%);
-  --Neutral-200: hsl(217, 61%, 90%);
+  --btn-hover: hsl(227, 75%, 14%);
+  --header-bg: hsl(226, 25%, 17%);
+  --link-bg: hsl(225, 23%, 24%);
+  --border-outline: hsl(225, 11%, 29%);
+  --hero-text: hsl(0, 0%, 78%);
+  --btn-color: hsl(217, 61%, 90%);
   --Neutral-100: hsl(0, 0%, 93%);
   --Neutral-0: hsl(200, 60%, 99%);
 
   --Red-400: hsl(3, 86%, 64%);
-  --Red-500: hsl(3, 71%, 56%);
-  --Red-700: hsl(3, 77%, 44%);
+  --active: hsl(3, 71%, 56%);
+  --link-outline: hsl(3, 77%, 44%);
 
-  --Light-Gradient: linear-gradient(180deg, #EBF2FC 0%, #9db7b9 100%);
-  --Dark-Gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+  --Gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
 }
+
+.light-mode {
+  --Gradient: linear-gradient(180deg, #EBF2FC 0%, #96bcbe 100%);
+  --header-bg:var(--Neutral-0) ;
+  --border-outline: hsl(225, 11%, 29%);
+  --btn-color: hsl(227, 75%, 14%);
+
+
+  --hero-text: hsl(227, 75%, 14%);
+  --link-bg: hsl(0, 0%, 93%);
+  --btn-hover: hsl(200, 60%, 99%);
+    --active: hsl(3, 71%, 56%);
+
+
+
+
+  /* --btn-hover: var(--Neutral-0);
+  --btn-color: var(--Neutral-900);
+  --link-bg: var(--Neutral-0);
+  --hero-text: var(--btn-hover);
+  --card-bg: var(--Neutral-100);
+  --link-color: var(--Neutral-600);
+  --gradient: var(--Light-Gradient); */
+}
+
 
 html {
   font-size: 62.5%;
@@ -32,7 +56,7 @@ body {
 }
 
 .project-container {
-    background: var(--Dark-Gradient);
+    background: var(--Gradient);
     padding: 1rem 3rem;
     display: flex;
     flex-direction: column;
